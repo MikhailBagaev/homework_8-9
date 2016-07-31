@@ -72,6 +72,20 @@ color: #fff;
     color: transparent;
     padding: 2px 0 0 3px;    
 }
+.logo--768 .logo__2nd_part, x:-moz-any-link {    
+    display: block;
+    background: url("../img/er.png") no-repeat;
+    position: absolute;
+    top: -3px;
+    left: 142px;
+}
+_:-ms-fullscreen, :root .logo--768 .logo__2nd_part {    
+    display: block;
+    background: url("../img/er.png") no-repeat;
+    position: absolute;
+    top: -3px;
+    left: 142px;    
+}
 .logo--top {
 	margin: 0 29px 0 19px;
 	width: 151px;	
@@ -104,9 +118,17 @@ color: #fff;
     color: transparent;
     transition: all .3s ease .15s;
 }
-
-
-
+.menu--full .menu__item__link:not(.menu__item__link--active):hover, x:-moz-any-link {
+    color: #745083;
+} 
+.menu--full .menu__item__link:not(.menu__item__link--active):hover, x:-moz-any-link {
+    color: #745083;
+    background: inherit;
+} 
+_:-ms-fullscreen, :root .menu--full .menu__item__link:not(.menu__item__link--active):hover {
+    color: #745083;
+    background: inherit;
+}
 /*SLIDER*/
 .wrapper--slider {
 	position: absolute;
@@ -578,10 +600,18 @@ color: #fff;
     text-transform: uppercase;
 }
 .menu--bottom .menu__item__link:not(.menu__item__link--active):hover {
-	background-image: linear-gradient(to top, #322539 0%, #745083 100%);  
+    background-image: linear-gradient(to top, #322539 0%, #745083 100%);  
     -webkit-background-clip: text;  
     color: transparent;
-	transition: all .3s ease .15s;
+    transition: all .3s ease .15s;
+}
+.menu--bottom .menu__item__link:not(.menu__item__link--active):hover, x:-moz-any-link {
+    color: #745083;
+    background: inherit;
+} 
+_:-ms-fullscreen, :root .menu--bottom .menu__item__link:not(.menu__item__link--active):hover {
+    color: #745083;
+    background: inherit;
 }
 .footer__text {
 	width: 142px;
